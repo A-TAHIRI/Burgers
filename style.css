@@ -1,0 +1,245 @@
+@import url(./style1.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+:root {
+  --largeur: 600px;
+  --primary-hover: #f8b936;
+  --background: #000000;
+  --navbar-height: 70px;
+}
+/* **************************main************************** */
+/* *****************acceuil************ */
+#acceuil {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 450px;
+  background-image: url(./images/bandeau-burger-1.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+#acceuil p {
+  background-color: #000;
+  font-size: 80px;
+  font-weight: 450;
+  width: 100%;
+  padding: 10px;
+  margin-top: 80px;
+  text-align: center;
+  opacity: 0.7;
+}
+/* ***************borgers**************** */
+#burgers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/burger-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1200px;
+  width: 100%;
+}
+.burgers1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px;
+  width: 400px;
+}
+.bur-item1 {
+  width: var(--largeur);
+  position: relative;
+}
+.bur-item2 {
+  width: var(--largeur);
+  position: relative;
+}
+.bur-item3 {
+  width: var(--largeur);
+  position: relative;
+}
+.bur-item4 {
+  width: var(--largeur);
+  position: relative;
+}
+.burgers1 img {
+  width: var(--largeur);
+  margin: 0px;
+  padding: 0px;
+}
+#newpng {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  left: -20px;
+}
+
+figcaption {
+  text-align: center;
+  background-color: #000;
+  color: #f8b936;
+  padding: 10px;
+  margin-top: -10px;
+  font-size: 22px;
+}
+
+.emporter, .surPlace{
+  position: absolute;
+  top: 45%;
+  margin-left:32%;
+  text-align: center;
+  text-decoration: none;
+  color: #f8b936;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #000;
+  border: #f8b936 solid 2px;
+  border-radius: 8px;
+  opacity: 0.8;
+  padding: 8px 10px;
+}
+.emporter{
+margin-left: 50%;
+}
+/* ************************footer************************** */
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  min-height: 350px;
+  
+}
+.hr {
+  background-color: #fab930;
+  height: 2px;
+  width: 55vw;
+  align-items: center;
+  margin-bottom: px;
+  opacity: 0.5;
+}
+#foot1 {
+  width: 48%;
+}
+.footer1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 30px 0px;
+  font-size: 12px;
+  position: relative;
+  text-decoration: none;
+
+}
+.footer1 a {
+  text-decoration: none;
+}
+h2 {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+  color: #f8b936;
+  margin-bottom: 10px;
+}
+.footer1 p {
+  text-align: start;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 3px;
+  
+}
+.footer2 {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  flex-wrap: wrap;
+  font-weight: 400;
+  text-align: start;
+  align-items: center;
+  padding: 20px;
+}
+.footer2 a {
+  text-decoration: none;
+}
+#services {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(64, 59, 59);
+  min-width: 40%;
+  min-height: 30px;
+  border-radius: 10px;
+ 
+}
+#services a{
+  text-decoration: none;
+}
+.objet {
+  background-color: #f8b936;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px 3px;
+  margin: 0px 10px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --largeur: 350px;
+  }
+  .footer1{
+    flex-direction: column;
+  }
+  #acceuil p {
+    font-size: 30px;
+    margin-bottom: -50px;
+  }
+  #acceuil {
+    align-items: end;
+  }
+  .footer-item4 {
+    display: none;
+  }
+  h2 {
+    text-align: center;
+  }
+  .footer1 p {
+    text-align: center;
+  }
+  .emporter{
+    margin-left: 55%;
+    }
+    #burgers{
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .footer-item1,.footer-item2,.footer-item3,.footer-item4{
+      padding-bottom: 10px;
+    }
+    
+    
+}

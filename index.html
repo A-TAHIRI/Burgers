@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Burgers Site Web">
+    <meta name="author" content="TAHIRI Abdelouafi">
+    <link rel="icon" href="./images/burger-logo.png" width:10 higth:10>
+    <title>Burgers</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu__wrapper">
+        <div class="menu__bar">
+          <div id="mglogo">
+            <img src="./images/burger-logo.png" alt="imglogo" class="imgLogo" />
+            <a href="#acceuil" title="Logo" class="logo"> BiiiG Burger </a>
+          </div>
+
+          <img
+            class="menu-icon"
+            src="./images/burger-menu.svg"
+            alt="Burger Menu"
+            onclick="toggleMenu(this)"
+          />
+          <ul class="navigation">
+            <li>
+              <a href="#acceuil" title="Menus">Menus </a>
+            </li>
+            <li>
+              <a href="#burgers" title="Burgers"> Burgers</a>
+            </li>
+            <li>
+              <a href="#footer" title="Boissons $ desserts">
+                Boissons $ desserts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="acceuil">
+        <p>Pour les fins gourmets aux biiig faims !</p>
+      </section>
+      <section id="burgers">
+        <div class="burgers1">
+          <div class="bur-item1">
+            <figure>
+              <img src="./images/burger-menus.jpg" alt="burger" />
+              <figcaption>Les menues BiiiG Burger</figcaption>
+            </figure>
+            <a type="button" class="surPlace" href="#">sur place</a
+            ><a type="button" class="emporter" href="#">A emporter</a>
+          </div>
+          <div class="bur-item2">
+            <figure>
+              <img src="./images/burger-selection.jpg" alt="burger2" />
+              <figcaption>Notre Sélection de burgers</figcaption>
+            </figure>
+            <a type="button" class="surPlace" href="#">sur place</a
+            ><a type="button" class="emporter" href="#">A emporter</a>
+          </div>
+          <div class="bur-item3">
+            <figure>
+              <img src="./images/perso-burger.jpg" alt="burger3" />
+              <figcaption>Personalisez votre burger</figcaption>
+            </figure>
+            <img src="./images/new.png" alt="newpng" id="newpng" />
+            <a type="button" class="surPlace" href="#">sur place</a
+            ><a type="button" class="emporter" href="#">A emporter</a>
+          </div>
+          <div class="bur-item4">
+            <figure>
+              <img src="./images/verrine-fraise.jpg" alt="burger4" />
+              <figcaption>Boissons et desserts</figcaption>
+            </figure>
+            <a type="button" class="surPlace" href="#">sur place</a
+            ><a type="button" class="emporter" href="#">A emporter</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section id="services">
+        <div> <a href="#">Paris</a></div>
+        <div class="objet"></div>
+        <div><a href="#">Tokyo</a></div>
+        <div class="objet"></div>
+        <div> <a href="#">New York</a></div>
+        <div class="objet"></div>
+        <div><a href="#">Dubai</a></div>
+      </section>
+      <section id="foot1">
+        <div class="footer1">
+          <div class="footer-item1">
+            <a href="#">
+            <img src="./images/burger-logo.png" alt="logo" width:"30"
+            height="30" >
+          </a>
+          </div>
+          <div class="footer-item2">
+            <h2>BIIG BURGER SARL</h2>
+            <p>Siége socil</p>
+            <p>5 sommet du plaisir culinaire</p>
+            <p>99 999,Calories cedex 1000</p>
+          </div>
+          <div class="footer-item2">
+            <h2>INFORMATION LEGALES</h2>
+            <p><a href="#">Mention légales</a></p>
+            <p><a href="#">CGU-CGV</a> </p>
+            <p><a href="#">Politique de confidentialité</a></p>
+          </div>
+          <div class="footer-item3">
+            <h2>CONTACT</h2>
+            <p><a href="#">Nous contacter</a></p>
+            <p><a href="#">Nos restaurants</a></p>
+            <p><a href="#">Devenir franchisé</a></p>
+          </div>
+          <div class="footer-item4">
+            <a href="#">
+            <img src="./images/burger-logo.png" alt="logo" width:"30"
+            height="30" >
+          </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+      <div class="footer2">
+        <img
+          src="./images/symbole-du-droit-dauteur.png"
+          alt="copyrigth"
+          width="20"
+          height="20"
+        />
+        <p><a href="#">BiiG Burger</a>, marque déposée.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
